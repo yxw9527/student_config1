@@ -36,7 +36,7 @@ mybatis-plus:
   
 ---  #添加了一个mybatis-plus--这是没有使用配置中心的的配置环境
 server:
- port: 8005  #1定义项目端口
+ port: 8000  #1定义项目端口
  servlet:
    context-path: /
    #yml语法：配置时必须要有缩进，这里的缩进不能是tab，可以是空格，而且：后面必须要有空格
@@ -58,7 +58,7 @@ eureka:    #这是注册中心的配置
     service-url:
       defaultZone: http://localhost:7000/eureka,http://localhost:7001/eureka,http://localhost:7002/eureka
   instance:
-    instance-id: provider-user-8005                #定义微服务的名称，也就是微服务在注册中心注册的名称
+    instance-id: provider-user-8000                #定义微服务的名称，也就是微服务在注册中心注册的名称
     prefer-ip-address: true                        #是否显示IP和端口
     
 #mybatis-plush配置
