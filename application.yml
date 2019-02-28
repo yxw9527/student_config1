@@ -1,9 +1,4 @@
-#定义用户默认的连接环境
-spring:
-  profiles: 
-    active: prod1
-
----  #这里是mybatis的配置环境
+---  #这里是这是配置中心的开发环境的配置环境
 server:
  port: 8005  #1定义项目端口
  servlet:
@@ -39,7 +34,7 @@ mybatis-plus:
 
 
   
----  #添加了一个mybatis-plus的配置环境
+---  #添加了一个mybatis-plus--这是没有使用配置中心的的配置环境
 server:
  port: 8005  #1定义项目端口
  servlet:
